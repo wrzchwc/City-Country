@@ -1,0 +1,42 @@
+.background {
+    background-image: url("http://dslv9ilpbe7p1.cloudfront.net/Y6Mw0nVdLeVHzc0f71F2ww_store_banner_image.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#question {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 6vmin;
+    text-align: center;
+    color: #e3e5d8;
+    text-shadow: -1px 0 #8d4651, 0 1px #8d4651, 1px 0 #8d4651, 0 -1px #8d4651;
+    top: 0;
+}
+
+.city {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.75vmin;
+    color: #1C1A27;
+    text-align: center;
+    vertical-align: center;
+    line-height: 23.25vmin;
+}
+
+.flashcard {
+    height: 31%;
+    width: 31%;
+    background: #e3e5d8;
+    border-radius: 15px;
+    border: calc(0.005 * 75vmin) solid #fa8e8f;
+}
+
+.frame {
+    height: 75vmin;
+    width: 75vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    margin: auto;
+}

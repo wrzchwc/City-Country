@@ -112,7 +112,7 @@
 }
 
 .coordinates {
-    size: 1.375vmin;
+    font-size: 1.375vmin;
     color: #e3e5d8;
     font-family: 'Orbitron', sans-serif;
     transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;

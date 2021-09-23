@@ -12,23 +12,12 @@
     color: #e3e5d8;
     text-shadow: -1px 0 #8d4651, 0 1px #8d4651, 1px 0 #8d4651, 0 -1px #8d4651;
     top: 0;
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
 }
 
-.city {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2.75vmin;
-    color: #1C1A27;
-    text-align: center;
-    vertical-align: center;
-    line-height: 23.25vmin;
-}
-
-.flashcard {
-    height: 31%;
-    width: 31%;
-    background: #e3e5d8;
-    border-radius: 15px;
-    border: calc(0.005 * 75vmin) solid #fa8e8f;
+#question:hover{
+    transform: scale(1.0075);
+    opacity: 75%;
 }
 
 .frame {
@@ -40,3 +29,102 @@
     justify-content: space-evenly;
     margin: auto;
 }
+
+.flashcard {
+    height: 100%;
+    width: 100%;
+    transition: all 750ms ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+}
+
+.front {
+    z-index: 2;
+    backface-visibility: hidden;
+    background: #e3e5d8;
+}
+
+.back {
+    background: #8d4651;
+    z-index: 1;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.container:hover .flashcard {
+    transform: rotateY(180deg);
+}
+
+.container {
+    perspective: 1000px;
+    height: 31%;
+    width: 31%;
+}
+
+.place {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.75vmin;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.country {
+    color: #e3e5d8;
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+.country:hover,
+.coordinates:hover {
+    transform: scale(1.25);
+    opacity: 75%;
+}
+
+.flag {
+    height: 20%;
+    width: 40%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 500ms ease-in-out;
+}
+
+.flag:hover {
+    transform: scale(1.25);
+}
+
+.photo {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    transition: transform 500ms ease-in-out;
+}
+
+.coordinates {
+    size: 1.375vmin;
+    color: #e3e5d8;
+    font-family: 'Orbitron', sans-serif;
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
